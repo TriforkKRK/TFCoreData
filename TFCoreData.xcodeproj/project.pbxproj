@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4C37661F1FE82900B047DD /* NotificationWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */; };
 		2E7D0B031E4E48B6008544D1 /* TFCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7D0AF91E4E48B6008544D1 /* TFCoreData.framework */; };
 		2E7D0B081E4E48B6008544D1 /* TFCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0B071E4E48B6008544D1 /* TFCoreDataTests.swift */; };
 		2E7D0B0A1E4E48B6008544D1 /* TFCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7D0AFC1E4E48B6008544D1 /* TFCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationWrappers.swift; sourceTree = "<group>"; };
 		2E7D0AF91E4E48B6008544D1 /* TFCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7D0AFC1E4E48B6008544D1 /* TFCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFCoreData.h; sourceTree = "<group>"; };
 		2E7D0AFD1E4E48B6008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				2E7D0AFC1E4E48B6008544D1 /* TFCoreData.h */,
 				2E7D0AFD1E4E48B6008544D1 /* Info.plist */,
+				2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */,
 			);
 			path = TFCoreData;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					2E7D0AF81E4E48B6008544D1 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					2E7D0B011E4E48B6008544D1 = {
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4C37661F1FE82900B047DD /* NotificationWrappers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 		2E7D0B0E1E4E48B6008544D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -330,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,6 +344,7 @@
 		2E7D0B0F1E4E48B6008544D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +363,7 @@
 		2E7D0B111E4E48B6008544D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TFCoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFCoreDataTests;
@@ -366,6 +375,7 @@
 		2E7D0B121E4E48B6008544D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TFCoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFCoreDataTests;
@@ -393,6 +403,7 @@
 				2E7D0B0F1E4E48B6008544D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E7D0B101E4E48B6008544D1 /* Build configuration list for PBXNativeTarget "TFCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +412,7 @@
 				2E7D0B121E4E48B6008544D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
