@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E08A4491F251F8F00685B27 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08A4481F251F8F00685B27 /* NSManagedObjectContext+Extensions.swift */; };
 		2E4C37661F1FE82900B047DD /* NotificationWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */; };
 		2E7D0B031E4E48B6008544D1 /* TFCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7D0AF91E4E48B6008544D1 /* TFCoreData.framework */; };
 		2E7D0B081E4E48B6008544D1 /* TFCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0B071E4E48B6008544D1 /* TFCoreDataTests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E08A4481F251F8F00685B27 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationWrappers.swift; sourceTree = "<group>"; };
 		2E7D0AF91E4E48B6008544D1 /* TFCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7D0AFC1E4E48B6008544D1 /* TFCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFCoreData.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				2E7D0AFC1E4E48B6008544D1 /* TFCoreData.h */,
 				2E7D0AFD1E4E48B6008544D1 /* Info.plist */,
 				2E4C37651F1FE82900B047DD /* NotificationWrappers.swift */,
+				2E08A4481F251F8F00685B27 /* NSManagedObjectContext+Extensions.swift */,
 			);
 			path = TFCoreData;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E4C37661F1FE82900B047DD /* NotificationWrappers.swift in Sources */,
+				2E08A4491F251F8F00685B27 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
