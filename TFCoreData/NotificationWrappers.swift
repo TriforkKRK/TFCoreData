@@ -10,13 +10,12 @@ import CoreData
 extension Notification {
     
     public struct ManagedObjectContextObjectsDidChange {
-        
-        public var insertedObjects    : Set<NSManagedObject> { return notification.objects(for: NSInsertedObjectsKey) }
-        public var updatedObjects     : Set<NSManagedObject> { return notification.objects(for: NSUpdatedObjectsKey) }
-        public var deletedObjects     : Set<NSManagedObject> { return notification.objects(for: NSDeletedObjectsKey) }
-        public var refreshedObjects   : Set<NSManagedObject> { return notification.objects(for: NSRefreshedObjectsKey) }
-        public var invalidatedObjects : Set<NSManagedObject> { return notification.objects(for: NSInvalidatedObjectsKey) }
-        
+
+        public var insertedObjects: Set<NSManagedObject> { return notification.objects(for: NSInsertedObjectsKey) }
+        public var updatedObjects: Set<NSManagedObject> { return notification.objects(for: NSUpdatedObjectsKey) }
+        public var deletedObjects: Set<NSManagedObject> { return notification.objects(for: NSDeletedObjectsKey) }
+        public var refreshedObjects: Set<NSManagedObject> { return notification.objects(for: NSRefreshedObjectsKey) }
+        public var invalidatedObjects: Set<NSManagedObject> { return notification.objects(for: NSInvalidatedObjectsKey) }
         private let notification: Notification
         
         fileprivate init(notification: Notification) {
@@ -30,15 +29,13 @@ extension Notification {
     }
 }
 
-
 extension Notification {
     
     public struct ManagedObjectContextDidSave {
         
-        public var insertedObjects    : Set<NSManagedObject> { return notification.objects(for: NSInsertedObjectsKey) }
-        public var updatedObjects     : Set<NSManagedObject> { return notification.objects(for: NSUpdatedObjectsKey) }
-        public var deletedObjects     : Set<NSManagedObject> { return notification.objects(for: NSDeletedObjectsKey) }
-        
+        public var insertedObjects: Set<NSManagedObject> { return notification.objects(for: NSInsertedObjectsKey) }
+        public var updatedObjects: Set<NSManagedObject> { return notification.objects(for: NSUpdatedObjectsKey) }
+        public var deletedObjects: Set<NSManagedObject> { return notification.objects(for: NSDeletedObjectsKey) }
         private let notification: Notification
         
         fileprivate init(notification: Notification) {
@@ -52,9 +49,7 @@ extension Notification {
     }
 }
 
-
 extension Notification {
-    
     fileprivate func objects(for key: String) -> Set<NSManagedObject> {
         return userInfo?[key] as! Set<NSManagedObject>? ?? []
     }
